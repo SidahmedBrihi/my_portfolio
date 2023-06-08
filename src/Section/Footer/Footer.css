@@ -1,0 +1,8 @@
+.footer {
+    background-color: #ececec;
+    color: black;
+}
+.footer .links a span:hover {
+color: var(--second-color);
+transition: 0.3s;
+}

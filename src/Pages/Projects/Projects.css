@@ -1,0 +1,11 @@
+.projects {
+padding-top: 200px;
+min-height: 100vh;
+background-color: #181818;
+color: white;
+}
+.projects span {
+color: var(--main-color);
+font-style: italic;
+font-weight: bold;
+}

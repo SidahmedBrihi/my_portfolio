@@ -1,0 +1,27 @@
+.about-me {
+background-color: #181818;
+color: white;
+min-height: calc(100vh - 200px);
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 120px;
+padding-bottom: 40px;
+}
+.about-me .about-img {
+    width: 500px;
+}
+@media (max-width : 600px) {
+.about-me .about-img {
+    width: 350px;
+}
+.about-me .about-text {
+padding: 0 20px;
+}
+}
+.about-me span {
+color: var(--main-color);
+}
+.about-me ul li {
+color: var(--main-color);
+}

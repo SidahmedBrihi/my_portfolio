@@ -1,0 +1,97 @@
+.landing {
+height: 100vh;
+background-color: #181818;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.landing .container {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.landing .me {
+transform: translateX(-200%);
+animation: tran-left 1s 0.8s ease-in forwards;
+}
+@keyframes tran-left {
+100% {
+transform: translateX(0);
+}
+}
+@keyframes tran-right {
+100% {
+transform: translateX(0);
+}
+}
+.landing .me .hello {
+display: flex;
+margin-bottom: 30px;
+}
+.landing .me .hello img {
+width: 40px;
+margin-left: 30px;
+}
+@keyframes hello {
+0% {
+transform: rotate();
+}
+}
+.landing .me .name {
+font-size: 50px;
+margin-bottom: 50px;
+}
+.landing .me .name span {
+color: var(--main-color);
+font-size: 45px ;
+font-weight: 700;
+}
+.landing .me .job {
+color: var(--main-color);
+font-size: 35px;
+}
+.landing .image {
+transform: translateX(+200%);
+animation: tran-left 0.6s 2s ease-in forwards;  
+}
+.landing .image img {
+    width: 500px;
+}
+@media (max-width : 1000px) {
+.landing .image img {
+    width: 350px;
+}
+.landing .me .hello {
+font-size: 35px;
+}
+.landing .me .name {
+    
+}
+.landing .me .job {
+    
+}
+}
+@media (max-width : 800px) {
+.landing .container {
+flex-direction: column;
+}
+}
+@media (max-width : 600px) {
+.landing .me .hello {
+font-size: 25px;
+}
+.landing .me .name {
+font-size: 25px;           
+}
+.landing .me .name span {
+font-size: 27px;
+}
+.landing .me .job {
+font-size: 25px;          
+}  
+.landing .image {
+margin-top: 30px;
+}
+}

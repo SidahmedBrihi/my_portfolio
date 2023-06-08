@@ -1,0 +1,44 @@
+.skills {
+background-color: var(--bg-dark);
+padding: 100px 0 200px;
+}
+.skills .skills-header span {
+color: var(--main-color);
+}
+.skills .skills-lang {
+display: grid;
+grid-template-columns: repeat(auto-fill , minmax(150px , 1fr));
+text-align: center;
+gap: 30px;
+}
+.skills .skills-lang .skill {
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid white;
+}
+@media (max-width : 480px) {
+.skills .skills-lang {
+grid-template-columns: repeat(2fr) !important;
+}
+}
+@media (max-width : 600px) {
+.skills .skills-lang {
+    padding: 0 40px;
+}
+}
+.skills .skills-lang .skill:hover {
+transform: scale(1.05);
+transition: 0.5s;
+box-shadow: rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important;
+border: 2px solid rgba(200, 137, 230, 0.635);
+}
+.skills .skills-lang .skill span {
+font-size: 50px;
+color: white;
+}
+.skills .skills-lang .skill:hover span{
+color: var(--main-color);
+transition: 0.5s;
+}

@@ -1,0 +1,66 @@
+.project {
+background-color: #151515;
+padding: 20px 10px;
+width: 80%;
+border-radius: 10px;
+margin: 0 auto;
+}
+.project:hover {
+    transition: 0.3s;
+    box-shadow: rgba(89, 4, 168, 0.137) 4px 5px 4px 3px !important;
+    border: 2px solid rgba(200, 137, 230, 0.635);
+    transform: translateY(-8px);
+}
+.project .image {
+height: 300px ;
+overflow: hidden;
+position: relative;
+border-radius: 8px;
+cursor: pointer;
+}
+@media (max-width : 990px) {
+.project .image {
+margin-bottom: 20px;
+}
+}
+.project .image img {
+position: absolute;
+width: 100%;
+left: 0;
+top: 0;
+}
+.project .image img:hover {
+animation: imgtranslate 12s forwards ease-in-out ;
+}
+@keyframes imgtranslate {
+0% {
+transform: translateY(0);  
+}
+100% {
+transform: translateY(calc(-100% + 300px));
+}
+}
+.project .project-text h5 {
+color: var(--main-color);
+}
+@media (max-width : 550px) {
+.project ul li a {
+font-size: 14px;
+}
+.project ul li a span {
+font-size: 14px;
+}
+}
+.project ul li a {
+color: white;
+}
+.project ul li a span {
+color: white;
+font-size: 22px;
+}
+.project ul li:hover a {
+    color: var(--main-color);
+}
+.project ul li:hover span {
+    color: var(--main-color);
+}
